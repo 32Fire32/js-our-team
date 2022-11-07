@@ -43,4 +43,10 @@ const team = [officeWorker1, officeWorker2, officeWorker3, officeWorker4, office
 
 for (let i = 0; i < team.length; i++) {
     console.log(team[i].fullName, team[i].role, team[i].image);
+    // Inserisco le informazioni sul dom
+    let teamHomepage = document.getElementById('teamList');
+    let liTeam = document.createElement('li');
+    teamHomepage.append(liTeam);
+    liTeam.innerHTML = `${team[i].fullName}, ${team[i].role}, ${team[i].image}`;
+
 }
