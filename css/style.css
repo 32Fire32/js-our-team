@@ -5,6 +5,40 @@
     padding: 0;
 }
 
+/* COMMON */
+
+.container {
+    width: 62.5rem;
+    margin: auto;
+}
+
+body {
+    height: 100vh;
+    padding: 100px;
+    text-align: center;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(99, 99, 99));
+}
+
 img {
     width: 50px;
+    border-radius: 100%;    
+
+}
+
+#teamList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 3 - 1.25rem);
+    padding: 0.725rem;
+    margin: 0.625rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #3861ac;
+    background-color: #122c5e;
+    border-radius: 1.25rem;
 }

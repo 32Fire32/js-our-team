@@ -46,10 +46,20 @@ for (let i = 0; i < team.length; i++) {
     // Inserisco le informazioni sul dom
     let teamHomepage = document.getElementById('teamList');
     let liTeam = document.createElement('li');
-    let photo = document.createElement('img');
+    liTeam.classList.add('card');
     teamHomepage.append(liTeam);
-    photo.src = `../img/${team[i].image}`
-    liTeam.innerHTML = `${team[i].fullName}, ${team[i].role}`;
+    let divText = document.createElement('div');
+    let name = document.createElement('h3');
+    let roleElement = document.createElement('p');
+    let photo = document.createElement('img');
+    divText.append(name);
+    divText.append(roleElement);
+    liTeam.append(divText);
+    name.innerHTML = team[i].fullName;
+    roleElement.innerHTML = team[i].role;
     liTeam.append(photo);
+    photo.src = `../img/${team[i].image}`
+
+
 
 }
