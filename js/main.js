@@ -46,7 +46,10 @@ for (let i = 0; i < team.length; i++) {
     // Inserisco le informazioni sul dom
     let teamHomepage = document.getElementById('teamList');
     let liTeam = document.createElement('li');
+    let photo = document.createElement('img');
     teamHomepage.append(liTeam);
-    liTeam.innerHTML = `${team[i].fullName}, ${team[i].role}, ${team[i].image}`;
+    photo.src = `../img/${team[i].image}`
+    liTeam.innerHTML = `${team[i].fullName}, ${team[i].role}`;
+    liTeam.append(photo);
 
 }
