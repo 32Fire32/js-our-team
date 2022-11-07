@@ -41,3 +41,6 @@ const officeWorker6 = {
 // mi creo l'array di oggetti
 const team = [officeWorker1, officeWorker2, officeWorker3, officeWorker4, officeWorker5, officeWorker6];
 
+for (let i = 0; i < team.length; i++) {
+    console.log(team[i].fullName, team[i].role, team[i].image);
+}
